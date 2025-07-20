@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FEF7DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo-tmc {
+  max-width: 422px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.start-button {
+    max-width: 290px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    display: block; /* Make container visible */
+}
+
+img[src="images/start button.png"]:active {
+    transform: scale(0.95);
+
+}
+
+img[src="images/home icon.png"]:active {
+    transform: scale(0.96);
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+
+  .logo-tmc {
+    width: 240px;
+    height: auto;
+    display: block;
+    margin: 150px auto 20px auto; /* atas 40px, bawah 20px, tengah otomatis */
+
+  }
+
+  .start-button {
+    width: 170px;
+    height: auto;
+    display: block;
+    margin: 5px auto 20px auto;
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 5px;
+    margin-top: 20px;
+  }
+
+img[src="images/home icon.png"] {
+  width: 36px;
+  height: 36px;
+  margin: 4px auto 12px auto; /* atas 4px, bawah 12px, tengah horizontal */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+}

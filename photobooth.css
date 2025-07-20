@@ -1,0 +1,170 @@
+
+body {
+  font-family: 'CutePixel', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #263D64;
+  background-color: #FEBFD6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FEF7DB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  max-width: 1200px; /* batas lebar konten */
+  max-height: 95px;   /* Batas tinggi maksimal */
+  overflow: hidden;    /* Potong konten yang melebihi tinggi */
+  margin: 0 auto;    /* posisikan di tengah */
+}
+
+img[src="images/home icon.png"]:active {
+    transform: scale(0.96);
+}
+img[src="images/tulisan tmc biru.png"]:active {
+    transform: scale(0.96);
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.camera-section, .preview-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+video {
+  width: 693px;
+  height: 445px;
+  
+}
+
+
+
+button {
+    font-family: 'CutePixel', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    height: 71px;
+    width: 246px;
+    border-radius: 30px;
+    background-color: #8FBFEF;
+    font-size: 1rem;
+    color: #263D64;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(164, 212, 255, 0.2);
+}
+
+
+button:hover {
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 6px 16px rgba(164, 212, 255, 0.35);
+}
+
+button:active {
+    transform: scale(0.96);
+    box-shadow: 0 1px 4px rgba(164, 212, 255, 0.18);
+}
+
+#mirrorBtn.mirror-on {
+  background-color: #263D64;
+  color: #8FBFEF;
+}
+
+#mirrorBtn.mirror-off {
+  background-color: #8FBFEF; /* biru muda default */
+  color: #263D64;
+}
+
+
+.preview-section {
+  background-color: #FEF7DB;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 250px;     /* Lebar card */
+  height: 667px;    /* Tinggi card */
+}
+
+
+.photo-grid canvas {
+  width: 250px; /* tampilannya kecil */
+  height: 150px;
+}
+
+
+.snapshot {
+  background-color: black;
+  width: 250px;
+  height: 150px;
+}
+
+#countdown {
+  position: fixed;
+  top: 50%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px #000;
+  display: none;
+}
+
+@media (max-width: 768px) {
+   header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;               /* jarak antar gambar */
+    padding-top: 15px 0;      
+    padding-bottom: 2px;
+    width: 90%;
+    height: auto;           
+  
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  video {
+    width: 300px;
+    height: 170px;
+  
+  }
+
+  .preview-section {
+    width: 85%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .snapshot,
+  .photo-grid canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    width: 160%;
+    height: auto;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  #countdown {
+    font-size: 2.5rem;
+    top: 40%;
+    left: 50%;
+  }
+}

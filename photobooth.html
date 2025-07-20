@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photobooth</title>
+  <link rel="icon" type="images/png" sizes="32x32" href="images/ketiganya.png">
+  <link rel="stylesheet" href="photobooth.css" />
+</head>
+<body>
+
+<header>
+  <!-- Logo kiri -->
+  <a href="index.html">
+    <img src="images/tulisan tmc biru.png" width="215" height="54" alt="The Memory Club">
+  </a>
+
+  <!-- Judul Photobooth -->
+  <a href="index.html">
+    <img src="images/tulisan photobooth.png" width="354" height= "auto">
+  </a>
+
+  <!-- Icon rumah kanan -->
+  <a href="pilihan.html">
+    <img src="images/home icon.png" width="62" height="59" >
+  </a>
+</header>
+
+<main>
+    <main style="max-width: 100vw; overflow-x: hidden; padding: 1rem;">
+
+  <div class="camera-section" style="text-align: center;">
+    <!-- Video dari kamera -->
+    <video id="camera" autoplay playsinline
+      style="width: 100%; max-width: 693px; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    </video>
+
+    <!-- Tombol START & MIRROR -->
+    <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+      <button id="startBtn" style="font-size: 32px; padding: 0.5em 1.5em;">START</button>
+      <button id="mirrorBtn" style="font-size: 32px; padding: 0.5em 1.5em;">MIRROR</button>
+    </div>
+  </div>
+
+</main>
+
+    <!-- Preview hasil kamera -->
+    <div class="preview-section">
+      <div class="photo-grid">
+        <canvas class="snapshot" width="250" height="150"></canvas>
+        <canvas class="snapshot" width="250" height="150"></canvas>
+        <canvas class="snapshot" width="250" height="150"></canvas>
+      </div>
+
+
+
+      <!-- Tombol buat Retake dan Next (edit)-->
+      <div class="buttons">
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <button id="retakeBtn" style="font-size: 36px; margin-bottom: 10px;">Retake</button>
+    
+<!-- <a href="editing.html"> -->
+<button id="nextBtn" class="nextBtn" style="font-size: 36px; background-color: #FEBFD6;">Next</button>
+<!-- </a> -->
+
+  </div>
+</div>
+
+  </main>
+  <div id="countdown"></div>
+  <script src="photobooth.js"></script>
+  
+</body>
+
+
+</html>
+
+
+
+

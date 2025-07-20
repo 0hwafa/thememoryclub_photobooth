@@ -1,0 +1,102 @@
+/* <-- halaman 2--> */
+/* halaman 2 styles - distinct from index.html */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nexa', sans-serif;
+}
+
+body {
+    background-color: #FEBFD6; /* pink background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main wrapper */
+.container {
+    position: relative;
+    width: 300px;
+    min-height: 500px;
+    background: #FEF7DB;
+    border-radius: 35px;
+    box-shadow: 0 4px 16px rgba(44,47,86,0.10);
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    font-size: 28px;
+    color: #263D64;
+    font-weight: bold;
+    font-family: 'Nexa';
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Card heading */
+.card h1 {
+    font-size: 25px;
+    color: #263D64;
+    margin-bottom: 24px;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+/* Buttons */
+button {
+    width: 90%;
+    margin: 12px 0;
+    padding: 12px 0;
+    border: none;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.login-btn {
+    background-color: #FEBFD6;
+    font-family: 'CutePixel';
+    color: #263D64;
+    letter-spacing: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup-btn {
+    background-color: #8FBFEF;
+    font-family: 'CutePixel';
+    color: #263D64;
+    letter-spacing: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 2px 8px rgba(44,47,86,0.08);
+}
+
+/* animation buat close 'X' button */
+.close:active {
+    transform: scale(0.96);
+}
